@@ -17,15 +17,26 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
+  var passwordLength = window.prompt("How many characters would you like your password to contain? Must be between 8-128 characters long");
   
-  var userChoice = window.prompt("How many characters would you like your password to contain?");
+  if (passwordLength <8 || passwordLength >128) {
+  window.alert("Password must be between 8 and 128 characters long.");
+    return; 
+  
+  } else {
+  var specialSelection = confirm("Click OK to confirm special characters");
+  var numericSelection = confirm("Click OK to confirm numbers");
+  var uppercaseSelection = confirm("Click OK to confirm uppercase characters");
+  var lowercaseSelection = confirm("Click OK to confirm lowercase characters");
 
+
+  }
 
 
 
 
 return password;
 
+  
 }
-
 generatePassword();
