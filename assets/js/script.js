@@ -34,13 +34,15 @@ function generatePassword() {
   if (uppercaseSelection) { multiSelect += multiSelect.concat(alphabet)};
   if (lowercaseSelection) { multiSelect += multiSelect.concat(alphabetLower)};
 
+  if (!specialSelection && !numericSelection && !uppercaseSelection && !lowercaseSelection) {
+    alert("You must confirm atleast one option.")
+    return;
+  }
+
   for (var i = 0; i < passwordLength; i++) {
-    console.log(randomPassword)
     randomPassword += multiSelect[Math.floor(Math.random() * multiSelect.length)]
 
     
   }
    writePassword(randomPassword);
  }
-
-
