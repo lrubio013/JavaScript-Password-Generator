@@ -16,4 +16,5 @@
 <img src=assets/images/passgen6.png>
 <img src=assets/images/passgen7.png>
 
-## Link to application
+## Link to live application
+https://lrubio013.github.io/JavaScript-Password-Generator/
